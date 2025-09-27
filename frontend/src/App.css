@@ -1,0 +1,40 @@
+/* Remove default App.css styles and use modern CSS */
+
+/* Ensure full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh;
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Remove any default margins and paddings that might interfere */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure sections take full width */
+section {
+  width: 100%;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}

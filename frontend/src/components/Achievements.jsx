@@ -39,7 +39,7 @@ const Achievements = () => {
       id: 4,
       icon: <Medal size={32} />,
       title: 'Published Apps Success',
-      description: '10K+ downloads & 4K+ active users',
+      description: '15K+ downloads & 5K+ active users',
       category: 'Development',
       date: '2023-2024',
       details: 'Successfully launched and maintained multiple Android applications on Play Store',

@@ -64,8 +64,7 @@ const Footer = () => {
             </button>
             
             <p className="text-gray-400 max-w-md leading-relaxed">
-              Passionate Android Developer building scalable, user-centric mobile solutions. 
-              Always exploring new technologies and creating impactful applications.
+             Passionate Android Developer and ML/AI enthusiast building scalable, intelligent, and user-centric mobile applications. Always exploring cutting-edge technologies to create impactful solutions.
             </p>
 
             <div className="flex items-center gap-2 text-[#00FFD1]">
@@ -112,10 +111,7 @@ const Footer = () => {
                 </a>
               ))}
               
-              <div className="flex items-center gap-3 text-gray-400">
-                <Phone size={20} />
-                <span className="font-mono text-sm">+977-9809641235</span>
-              </div>
+             
             </div>
           </div>
         </div>

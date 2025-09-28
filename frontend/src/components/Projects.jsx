@@ -39,27 +39,78 @@ const Projects = () => {
       },
       featured: true
     },
+{
+  id: 7,
+  title: 'Paisa Expense Manager',
+  description: 'A smart expense manager app designed to track daily expenses, categorize spending, and provide insightful analytics for better financial management.',
+  image: '/images/paisa.png',
+  category: 'Android',
+  tech: ['Java', 'Android Studio', 'Realm', 'Google Drive Backup'],
+  highlights: [
+    'Simple & Intuitive UI',
+    'Realm Database Integration',
+    'Google Drive Backup & Restore'
+  ],
+  links: {
+    playStore: 'https://play.google.com/store/apps/details?id=com.paisa.expense_manager'
+  },
+  featured: true
+},
+{
+  id: 8,
+  title: 'Kuraakaani',
+  description: 'A modern chatting application designed for fast, secure, and real-time messaging with a clean UI and seamless user experience.',
+  image: '/images/kurakani.png',
+  category: 'Android',
+  tech: ['Java', 'Android Studio', 'Firebase Auth', 'Firestore', 'Glide'],
+  highlights: [
+    'Real-time Messaging',
+    'User Authentication & Profiles',
+    'Media Sharing Support'
+  ],
+  links: {
+    github: 'https://github.com/sumitsah250/android-files/tree/master/KuraaKaani'
+  },
+},
+
+{
+  id: 3,
+  title: 'Sign Language Detection ML Model',
+  description: 'A deep learning-based model for recognizing and translating sign language gestures into text in real-time, improving accessibility and communication.',
+  image: '/images/Sign_language_detection.png',
+  category: 'ML/AI',
+  tech: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy'],
+  highlights: [
+    'Real-time Gesture Recognition',
+    'Custom CNN/LSTM Architecture',
+    'Improves Accessibility'
+  ],
+  links: {
+    github: 'https://github.com/sumitsah250/sign-language'
+  }
+},
+{
+  id: 6,
+  title: 'Forest Fire Detection System',
+  description: 'An IoT-powered system designed to detect forest fires at an early stage using sensors and real-time monitoring, helping prevent large-scale environmental damage.',
+  image: '/images/Wild_fire_detection.png',
+  category: 'ML/AI',
+  tech: ['Arduino', 'ESP32', 'IoT Sensors', 'Firebase', 'Android App'],
+  highlights: [
+    'Early Fire Detection with Sensors',
+    'Real-time Alerts & Monitoring',
+    'Mobile App Integration'
+  ],
+  links: {
+    github: 'https://github.com/sumitsah250/OSMHackFest2024'
+  }
+},
+
     {
-      id: 3,
-      title: 'Image Classification ML Model',
-      description: 'Deep learning model for accurate image classification using convolutional neural networks. Trained on custom dataset with 95% accuracy.',
-      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxhaSUyMG1hY2hpbmUlMjBsZWFybmluZ3xlbnwwfHx8fDE3NTg4ODU2NDJ8MA&ixlib=rb-4.1.0&q=85',
-      category: 'ML/AI',
-      tech: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy'],
-      highlights: [
-        '95% Classification Accuracy',
-        'Custom CNN Architecture',
-        'Real-time Prediction'
-      ],
-      links: {
-        github: 'https://github.com/sumitsah250'
-      }
-    },
-    {
-      id: 4,
+      id: 5,
       title: 'Line Following Robot',
       description: 'Autonomous line-following robot built with Arduino and infrared sensors. Implements PID control for smooth navigation and obstacle detection.',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxyb2JvdGljc3xlbnwwfHx8fDE3NTg4ODU2NDJ8MA&ixlib=rb-4.1.0&q=85',
+      image: '/images/LineFollowingRobot.jpg',
       category: 'Robotics',
       tech: ['Arduino', 'C++', 'Sensors', 'Motors', 'PID Control'],
       highlights: [
@@ -68,41 +119,27 @@ const Projects = () => {
         'Autonomous Navigation'
       ],
       links: {
-        github: 'https://github.com/sumitsah250'
+        github: 'https://github.com/sumitsah250/Robotics/tree/master/Line%20followig%20bot'
       }
     },
     {
-      id: 5,
-      title: 'Smart Home Automation',
-      description: 'IoT-based smart home system with mobile app control. Features voice commands, scheduling, and real-time monitoring of home devices.',
-      image: 'https://images.unsplash.com/photo-1558618644-fcd25c85cd64?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGhvbWV8ZW58MHx8fHwxNzU4ODg1NjQyfDA&ixlib=rb-4.1.0&q=85',
-      category: 'Robotics',
-      tech: ['Arduino', 'ESP32', 'Android App', 'Firebase', 'IoT'],
-      highlights: [
-        'Voice Control Integration',
-        'Real-time Monitoring',
-        'Mobile App Interface'
-      ],
-      links: {
-        github: 'https://github.com/sumitsah250'
-      }
-    },
-    {
-      id: 6,
-      title: 'Natural Language Processing Chatbot',
-      description: 'AI-powered chatbot using natural language processing for intelligent conversations. Trained on diverse datasets for context-aware responses.',
-      image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxjaGF0Ym90JTIwYWl8ZW58MHx8fHwxNzU4ODg1NjQyfDA&ixlib=rb-4.1.0&q=85',
-      category: 'ML/AI',
-      tech: ['Python', 'NLTK', 'TensorFlow', 'Transformers', 'Flask'],
-      highlights: [
-        'Context-aware Responses',
-        'Multi-language Support',
-        'Sentiment Analysis'
-      ],
-      links: {
-        github: 'https://github.com/sumitsah250'
-      }
-    }
+  id: 4,
+  title: 'Rowboatics – Wireless Controlled Boat',
+  description: 'A wirelessly controlled boat designed for the IIT Bombay TechFest competition. The boat can be navigated using a Flysky joystick remote and is optimized for speed, maneuverability, and obstacle navigation.',
+  image: '/images/Rc_boat.png', 
+  category: 'Robotics',
+  tech: ['Arduino', 'BLDC Motor', 'ESC Controller', 'Flysky Remote', 'IoT'],
+  highlights: [
+    'Wireless Joystick Control',
+    '3D Printed Propeller Design',
+    'Optimized for Obstacle Navigation'
+  ],
+  links: {
+    github: 'https://github.com/sumitsah250/Robotics/tree/master/rowboatics'
+  }
+},
+
+
   ];
 
   const filters = ['All', 'Android', 'ML/AI', 'Robotics'];
@@ -118,7 +155,7 @@ const Projects = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     const element = document.getElementById('projects');

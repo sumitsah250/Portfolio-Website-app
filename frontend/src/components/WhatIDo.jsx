@@ -11,7 +11,7 @@ const WhatIDo = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     const element = document.getElementById('what-i-do');

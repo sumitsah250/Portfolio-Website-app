@@ -17,7 +17,7 @@ const Skills = () => {
     { name: 'Java', icon: <Code size={32} />, category: 'Languages' },
     { name: 'Python', icon: <Code size={32} />, category: 'Languages' },
     { name: 'C++', icon: <Code size={32} />, category: 'Languages' },
-    { name: 'JavaScript', icon: <Code size={32} />, category: 'Languages' },
+    { name: 'C', icon: <Code size={32} />, category: 'Languages' },
     
     // Tools & Platforms
     { name: 'Firebase', icon: <Cloud size={32} />, category: 'Tools' },

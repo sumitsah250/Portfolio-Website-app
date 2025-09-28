@@ -42,12 +42,12 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const serviceID = 'service_vggiwq5';
+      const serviceID = 'service_x9b0dfa';
 const templateID = 'template_vja8c97';
 const publicKey = 'naHTp9P88rBf2wQtH';
 
 await emailjs.send(
-  'service_vggiwq5',    // service ID
+  'service_x9b0dfa',    // service ID
   'template_vja8c97',   // template ID
   {
     name: formData.name,

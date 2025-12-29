@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { ExternalLink, Github, Play, Users, Download, Filter } from 'lucide-react';
+import { ExternalLink, Github, Play, Users, Download } from 'lucide-react';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [activeFilter, setActiveFilter] = useState('All');
 
   const projectsData = [
+    // Android Projects
     {
       id: 1,
       title: 'SEE All Books & Guides 2081',
@@ -39,73 +40,75 @@ const Projects = () => {
       },
       featured: true
     },
-{
-  id: 7,
-  title: 'Paisa Expense Manager',
-  description: 'A smart expense manager app designed to track daily expenses, categorize spending, and provide insightful analytics for better financial management.',
-  image: '/images/paisa.png',
-  category: 'Android',
-  tech: ['Java', 'Android Studio', 'Realm', 'Google Drive Backup'],
-  highlights: [
-    'Simple & Intuitive UI',
-    'Realm Database Integration',
-    'Google Drive Backup & Restore'
-  ],
-  links: {
-    playStore: 'https://play.google.com/store/apps/details?id=com.paisa.expense_manager'
-  },
-  featured: true
-},
-{
-  id: 8,
-  title: 'Kuraakaani',
-  description: 'A modern chatting application designed for fast, secure, and real-time messaging with a clean UI and seamless user experience.',
-  image: '/images/kurakani.png',
-  category: 'Android',
-  tech: ['Java', 'Android Studio', 'Firebase Auth', 'Firestore', 'Glide'],
-  highlights: [
-    'Real-time Messaging',
-    'User Authentication & Profiles',
-    'Media Sharing Support'
-  ],
-  links: {
-    github: 'https://github.com/sumitsah250/android-files/tree/master/KuraaKaani'
-  },
-},
+    {
+      id: 7,
+      title: 'Paisa Expense Manager',
+      description: 'A smart expense manager app designed to track daily expenses, categorize spending, and provide insightful analytics for better financial management.',
+      image: '/images/paisa.png',
+      category: 'Android',
+      tech: ['Java', 'Android Studio', 'Realm', 'Google Drive Backup'],
+      highlights: [
+        'Simple & Intuitive UI',
+        'Realm Database Integration',
+        'Google Drive Backup & Restore'
+      ],
+      links: {
+        playStore: 'https://play.google.com/store/apps/details?id=com.paisa.expense_manager'
+      },
+      featured: true
+    },
+    {
+      id: 8,
+      title: 'Kuraakaani',
+      description: 'A modern chatting application designed for fast, secure, and real-time messaging with a clean UI and seamless user experience.',
+      image: '/images/kurakani.png',
+      category: 'Android',
+      tech: ['Java', 'Android Studio', 'Firebase Auth', 'Firestore', 'Glide'],
+      highlights: [
+        'Real-time Messaging',
+        'User Authentication & Profiles',
+        'Media Sharing Support'
+      ],
+      links: {
+        github: 'https://github.com/sumitsah250/android-files/tree/master/KuraaKaani'
+      }
+    },
 
-{
-  id: 3,
-  title: 'Sign Language Detection ML Model',
-  description: 'A deep learning-based model for recognizing and translating sign language gestures into text in real-time, improving accessibility and communication.',
-  image: '/images/Sign_language_detection.png',
-  category: 'ML/AI',
-  tech: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy'],
-  highlights: [
-    'Real-time Gesture Recognition',
-    'Custom CNN/LSTM Architecture',
-    'Improves Accessibility'
-  ],
-  links: {
-    github: 'https://github.com/sumitsah250/sign-language'
-  }
-},
-{
-  id: 6,
-  title: 'Forest Fire Detection System',
-  description: 'An IoT-powered system designed to detect forest fires at an early stage using sensors and real-time monitoring, helping prevent large-scale environmental damage.',
-  image: '/images/Wild_fire_detection.png',
-  category: 'ML/AI',
-  tech: ['Arduino', 'ESP32', 'IoT Sensors', 'Firebase', 'Android App'],
-  highlights: [
-    'Early Fire Detection with Sensors',
-    'Real-time Alerts & Monitoring',
-    'Mobile App Integration'
-  ],
-  links: {
-    github: 'https://github.com/sumitsah250/OSMHackFest2024'
-  }
-},
+    // ML/AI Projects
+    {
+      id: 3,
+      title: 'Sign Language Detection ML Model',
+      description: 'A deep learning-based model for recognizing and translating sign language gestures into text in real-time, improving accessibility and communication.',
+      image: '/images/Sign_language_detection.png',
+      category: 'ML/AI',
+      tech: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'NumPy'],
+      highlights: [
+        'Real-time Gesture Recognition',
+        'Custom CNN/LSTM Architecture',
+        'Improves Accessibility'
+      ],
+      links: {
+        github: 'https://github.com/sumitsah250/sign-language'
+      }
+    },
+    {
+      id: 6,
+      title: 'Forest Fire Detection System',
+      description: 'An IoT-powered system designed to detect forest fires at an early stage using sensors and real-time monitoring, helping prevent large-scale environmental damage.',
+      image: '/images/Wild_fire_detection.png',
+      category: 'ML/AI',
+      tech: ['Arduino', 'ESP32', 'IoT Sensors', 'Firebase', 'Android App'],
+      highlights: [
+        'Early Fire Detection with Sensors',
+        'Real-time Alerts & Monitoring',
+        'Mobile App Integration'
+      ],
+      links: {
+        github: 'https://github.com/sumitsah250/OSMHackFest2024'
+      }
+    },
 
+    // Robotics Projects
     {
       id: 5,
       title: 'Line Following Robot',
@@ -123,26 +126,43 @@ const Projects = () => {
       }
     },
     {
-  id: 4,
-  title: 'Rowboatics – Wireless Controlled Boat',
-  description: 'A wirelessly controlled boat designed for the IIT Bombay TechFest competition. The boat can be navigated using a Flysky joystick remote and is optimized for speed, maneuverability, and obstacle navigation.',
-  image: '/images/Rc_boat.png', 
-  category: 'Robotics',
-  tech: ['Arduino', 'BLDC Motor', 'ESC Controller', 'Flysky Remote', 'IoT'],
-  highlights: [
-    'Wireless Joystick Control',
-    '3D Printed Propeller Design',
-    'Optimized for Obstacle Navigation'
-  ],
-  links: {
-    github: 'https://github.com/sumitsah250/Robotics/tree/master/rowboatics'
-  }
-},
+      id: 4,
+      title: 'Rowboatics – Wireless Controlled Boat',
+      description: 'A wirelessly controlled boat designed for the IIT Bombay TechFest competition. The boat can be navigated using a Flysky joystick remote and is optimized for speed, maneuverability, and obstacle navigation.',
+      image: '/images/Rc_boat.png', 
+      category: 'Robotics',
+      tech: ['Arduino', 'BLDC Motor', 'ESC Controller', 'Flysky Remote', 'IoT'],
+      highlights: [
+        'Wireless Joystick Control',
+        '3D Printed Propeller Design',
+        'Optimized for Obstacle Navigation'
+      ],
+      links: {
+        github: 'https://github.com/sumitsah250/Robotics/tree/master/rowboatics'
+      }
+    },
 
-
+    // Real-World Projects
+    {
+      id: 101,
+      title: 'MeaningBy.com',
+      category: 'Real-World',
+      description: 'Live educational platform focused on dictionary, translations, and writing resources. Fully designed, developed, deployed, and maintained by me.',
+      image: '/images/meaningby.png',
+      links: { demo: 'https://meaningby.com' },
+      featured: true
+    },
+    {
+      id: 102,
+      title: 'IOE GESAN – Community Website',
+      category: 'Real-World',
+      description: 'Official community website of IOE GESAN. Managing hosting, performance, content updates, and technical maintenance for 1+ year.',
+      image: '/images/ioegesan.png',
+      links: { demo: 'https://www.ioegesan.org/?i=1' }
+    }
   ];
 
-  const filters = ['All', 'Android', 'ML/AI', 'Robotics'];
+  const filters = ['All', 'Android', 'ML/AI', 'Robotics','Real-World'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projectsData 
@@ -151,9 +171,7 @@ const Projects = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.1 }
     );
@@ -167,9 +185,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-black relative">
       <div className="max-w-7xl mx-auto px-8">
-        <div className={`transition-all duration-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
+        <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           
           {/* Section Title */}
           <div className="text-center mb-16">
@@ -184,15 +200,11 @@ const Projects = () => {
 
           {/* Filter Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {filters.map((filter) => (
+            {filters.map(filter => (
               <button
                 key={filter}
                 onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-3 rounded-lg font-mono text-sm border transition-all duration-300 ${
-                  activeFilter === filter
-                    ? 'bg-[#00FFD1] text-black border-[#00FFD1]'
-                    : 'bg-transparent text-gray-400 border-gray-700 hover:border-[#00FFD1] hover:text-[#00FFD1]'
-                }`}
+                className={`px-6 py-3 rounded-lg font-mono text-sm border transition-all duration-300 ${activeFilter === filter ? 'bg-[#00FFD1] text-black border-[#00FFD1]' : 'bg-transparent text-gray-400 border-gray-700 hover:border-[#00FFD1] hover:text-[#00FFD1]'}`}
               >
                 {filter}
               </button>
@@ -204,66 +216,38 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <div 
                 key={project.id}
-                className={`group bg-gray-900 bg-opacity-50 rounded-lg overflow-hidden border border-gray-800 
-                  hover:border-[#00FFD1] transition-all duration-500 ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                  }`}
+                className={`group bg-gray-900 bg-opacity-50 rounded-lg overflow-hidden border border-gray-800 hover:border-[#00FFD1] transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
-                
-                {/* Project Image */}
                 <div className="relative overflow-hidden">
                   <img 
                     src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  
-                  {/* Category Badge */}
                   <div className="absolute top-4 left-4 bg-[#00FFD1] text-black px-3 py-1 rounded-full text-xs font-bold font-mono">
                     {project.category}
                   </div>
-                  
-                  {/* Featured Badge */}
                   {project.featured && (
                     <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-3 py-1 rounded-full text-xs font-bold font-mono">
                       FEATURED
                     </div>
                   )}
-                  
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                  
-                  {/* Hover Links */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex gap-3">
-                      {project.links.playStore && (
-                        <a 
-                          href={project.links.playStore}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-[#00FFD1] text-black p-3 rounded-full hover:scale-110 transition-transform"
-                        >
+                      {project.links?.playStore && (
+                        <a href={project.links.playStore} target="_blank" rel="noopener noreferrer" className="bg-[#00FFD1] text-black p-3 rounded-full hover:scale-110 transition-transform">
                           <Play size={20} />
                         </a>
                       )}
-                      {project.links.github && (
-                        <a 
-                          href={project.links.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-white text-black p-3 rounded-full hover:scale-110 transition-transform"
-                        >
+                      {project.links?.github && (
+                        <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="bg-white text-black p-3 rounded-full hover:scale-110 transition-transform">
                           <Github size={20} />
                         </a>
                       )}
-                      {project.links.demo && (
-                        <a 
-                          href={project.links.demo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-gray-800 text-white p-3 rounded-full hover:scale-110 transition-transform"
-                        >
+                      {project.links?.demo && (
+                        <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white p-3 rounded-full hover:scale-110 transition-transform">
                           <ExternalLink size={20} />
                         </a>
                       )}
@@ -271,18 +255,12 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Project Content */}
                 <div className="p-6 space-y-4">
-                  
                   <h3 className="text-xl font-bold text-white font-mono group-hover:text-[#00FFD1] transition-colors">
                     {project.title}
                   </h3>
-                  
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    {project.description}
-                  </p>
+                  <p className="text-gray-400 text-sm leading-relaxed">{project.description}</p>
 
-                  {/* Stats */}
                   {project.stats && (
                     <div className="grid grid-cols-2 gap-3 py-3">
                       <div className="text-center bg-gray-800 bg-opacity-50 rounded-lg p-2">
@@ -300,7 +278,6 @@ const Projects = () => {
                     </div>
                   )}
 
-                  {/* Highlights */}
                   {project.highlights && (
                     <div className="space-y-2">
                       {project.highlights.slice(0, 2).map((highlight, i) => (
@@ -312,20 +289,12 @@ const Projects = () => {
                     </div>
                   )}
 
-                  {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 pt-2">
-                    {project.tech.slice(0, 3).map((tech) => (
-                      <span 
-                        key={tech}
-                        className="bg-gray-800 px-2 py-1 rounded-full text-xs text-gray-300"
-                      >
-                        {tech}
-                      </span>
+                    {project.tech?.slice(0, 3).map(tech => (
+                      <span key={tech} className="bg-gray-800 px-2 py-1 rounded-full text-xs text-gray-300">{tech}</span>
                     ))}
-                    {project.tech.length > 3 && (
-                      <span className="text-gray-500 text-xs self-center">
-                        +{project.tech.length - 3}
-                      </span>
+                    {project.tech?.length > 3 && (
+                      <span className="text-gray-500 text-xs self-center">+{project.tech.length - 3}</span>
                     )}
                   </div>
                 </div>
@@ -333,7 +302,6 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Show More Button */}
           <div className="text-center mt-12">
             <button 
               onClick={() => document.getElementById('github').scrollIntoView({ behavior: 'smooth' })}

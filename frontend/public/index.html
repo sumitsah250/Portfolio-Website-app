@@ -1,151 +1,174 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A product of emergent.sh" />
-        <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-        <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#000000"/>
+  <title>Sumit Sah | Android & ML Developer</title>
+    
+    <link rel="icon" type="image/png" href="https://sahsumit.com.np/images/profileimage.png">
+    <link rel="shortcut icon" href="https://sahsumit.com.np/images/profileimage.png" type="image/png">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-        <title>Sumit Sah | Android & ML Developer</title>
-    </head>
-    <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-        <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <meta name="description" content="Official portfolio of Sumit Sah — Android & ML Developer from Nepal. Building apps, AI tools, and innovative tech solutions.">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- ✅ Open Graph for Google & Social Previews -->
+  	<meta property="og:title" content="Sumit Sah | Android & ML Developer">
+    <meta name="keywords" content="Sumit Sah, Android Developer Nepal, ML Developer, AI Developer Nepal, Android apps, Machine Learning Developer, app developer Nepal, Sumit portfolio, Paisa Budget & Expense Tracker, Expense tracker app, Budget manager, Finance app, SEE All Books & Guides 2082, Class 10 books app, Study guide Nepal, Exam preparation app, Pustak Bazzar, Buy sell books app, Book marketplace app, To Do List, Task manager app, Productivity app, Schedule planner app">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-        <!-- <a
-            id="emergent-badge"
-            target="_blank"
-            href="https://app.emergent.sh/?utm_source=emergent-badge"
-            style="
-                display: flex !important;
-                align-items: center !important;
-                position: fixed !important;
-                bottom: 20px;
-                right: 20px;
-                text-decoration: none;
-                padding: 6px 10px;
-                font-family: -apple-system, BlinkMacSystemFont,
-                    &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell,
-                    &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;,
-                    sans-serif !important;
-                font-size: 12px !important;
-                z-index: 9999 !important;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
-                border-radius: 8px !important;
-                background-color: #ffffff !important;
-                border: 1px solid rgba(255, 255, 255, 0.25) !important;
-            "
-        > -->
-            <div
-                style="display: flex; flex-direction: row; align-items: center"
-            >
-                <img
-                    style="width: 20px; height: 20px; margin-right: 8px"
-                    src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4"
-                />
-                <p
-                    style="
-                        color: #000000;
-                        font-family: -apple-system, BlinkMacSystemFont,
-                            &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu,
-                            Cantarell, &quot;Open Sans&quot;,
-                            &quot;Helvetica Neue&quot;, sans-serif !important;
-                        font-size: 12px !important;
-                        align-items: center;
-                        margin-bottom: 0;
-                    "
-                >
-                    Made By Sumit
-                </p>
-            </div>
-        </a>
-        <script>
-            !(function (t, e) {
-                var o, n, p, r;
-                e.__SV ||
-                    ((window.posthog = e),
-                    (e._i = []),
-                    (e.init = function (i, s, a) {
-                        function g(t, e) {
-                            var o = e.split(".");
-                            2 == o.length && ((t = t[o[0]]), (e = o[1])),
-                                (t[e] = function () {
-                                    t.push(
-                                        [e].concat(
-                                            Array.prototype.slice.call(
-                                                arguments,
-                                                0,
-                                            ),
-                                        ),
-                                    );
-                                });
-                        }
-                        ((p = t.createElement("script")).type =
-                            "text/javascript"),
-                            (p.crossOrigin = "anonymous"),
-                            (p.async = !0),
-                            (p.src =
-                                s.api_host.replace(
-                                    ".i.posthog.com",
-                                    "-assets.i.posthog.com",
-                                ) + "/static/array.js"),
-                            (r =
-                                t.getElementsByTagName(
-                                    "script",
-                                )[0]).parentNode.insertBefore(p, r);
-                        var u = e;
-                        for (
-                            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
-                                u.people = u.people || [],
-                                u.toString = function (t) {
-                                    var e = "posthog";
-                                    return (
-                                        "posthog" !== a && (e += "." + a),
-                                        t || (e += " (stub)"),
-                                        e
-                                    );
-                                },
-                                u.people.toString = function () {
-                                    return u.toString(1) + ".people (stub)";
-                                },
-                                o =
-                                    "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
-                                        " ",
-                                    ),
-                                n = 0;
-                            n < o.length;
-                            n++
-                        )
-                            g(u, o[n]);
-                        e._i.push([i, s, a]);
-                    }),
-                    (e.__SV = 1));
-            })(document, window.posthog || []);
-            posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE", {
-                api_host: "https://us.i.posthog.com",
-                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
-            });
-        </script>
-    </body>
+	<meta name="author" content="Sumit Sah">
+	<link rel="canonical" href="https://sahsumit.com.np/" />
+    <!-- Global meta keywords for your portfolio -->
+
+
+
+
+
+  <meta property="og:description" content="Explore my Android & Machine Learning projects — apps, code, and creative solutions.">
+  <meta property="og:image" content="https://sahsumit.com.np/images/profileimage.png">
+  <meta property="og:url" content="https://sahsumit.com.np">
+  <meta property="og:type" content="website">
+
+  <!-- ✅ Twitter Card (Google sometimes uses this too) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sumit Sah | Android & ML Developer">
+  <meta name="twitter:description" content="Official portfolio of Sumit Sah — Android & ML Developer.">
+  <meta name="twitter:image" content="https://sahsumit.com.np/images/profileimage.png">
+
+  <!-- ✅ JSON-LD Structured Data (helps Google associate image with site) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sumit Sah",
+  "url": "https://sahsumit.com.np",
+  "image": "https://sahsumit.com.np/images/profileimage.png",
+  "jobTitle": "Android & ML Developer",
+  "description": "Android & Machine Learning Developer from Nepal — building apps, AI tools, and tech solutions.",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "SUMIX Developers"
+  },
+  "sameAs": [
+    "https://github.com/sumitsah250",
+    "https://linkedin.com/in/sumit-sah-3675b91a9",
+    "https://facebook.com/sumitsah250",
+    "https://instagram.com/sumitsah.250"
+  ]
+}
+</script>
+    
+    
+    <!-- Paisa Budget & Expense Tracker -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Paisa Budget & Expense Tracker",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "FinanceApplication",
+  "url": "https://play.google.com/store/apps/details?id=com.paisa.expense_manager",
+  "image": "https://sahsumit.com.np/images/paisa.png",
+  "author": {
+    "@type": "Person",
+    "name": "Sumit Sah"
+  }
+}
+</script>
+
+<!-- SEE All Books & Guides 2082 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SEE All Books & Guides 2082",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "EducationApplication",
+  "url": "https://play.google.com/store/apps/details?id=com.boss.class10allguidemanual2081",
+  "image": "https://sahsumit.com.np/images/seeguideapp.png",
+  "author": {
+    "@type": "Person",
+    "name": "Sumit Sah"
+  }
+}
+</script>
+
+<!-- Pustak Bazzar - Buy/Sell Books -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Pustak Bazzar - Buy/Sell Books",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "ShoppingApplication",
+  "url": "https://play.google.com/store/apps/details?id=com.pustakbazzar.app",
+  "image": "https://sahsumit.com.np/images/pustakbazzar.png",
+  "author": {
+    "@type": "Person",
+    "name": "Sumit Sah"
+  }
+}
+</script>
+
+<!-- To Do List -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "To Do List",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "ProductivityApplication",
+  "url": "https://play.google.com/store/apps/details?id=com.todolist.app",
+  "image": "https://sahsumit.com.np/images/to_do_list.png",
+  "author": {
+    "@type": "Person",
+    "name": "Sumit Sah"
+  }
+}
+</script>
+
+
+
+  <script defer="defer" src="/static/js/main.4bf23405.js"></script>
+  <link href="/static/css/main.7e73404e.css" rel="stylesheet">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div style="text-align:center; margin-top:40px;">
+  <img 
+    src="/images/profileimage.png" 
+    alt="Sumit Sah — Android & ML Developer" 
+    title="Sumit Sah - Android and ML Developer | SUMIX Developers"
+    width="200" 
+    height="200" 
+    loading="lazy"
+    style="border-radius:50%;"
+  />
+  <h1>Sumit Sah</h1>
+  <p>Android & ML Developer from Nepal</p>
+
+  <!-- ✅ Backlinks Section -->
+  <div style="margin-top:20px;">
+    <a href="https://play.google.com/store/apps/details?id=com.paisa.expense_manager" target="_blank">Paisa Expense Manager</a>
+	<a href="https://play.google.com/store/apps/details?id=com.boss.class10allguidemanual2081" target="_blank">SEE All Books & Guides 2082</a>
+	<a href="https://play.google.com/store/apps/details?id=com.pustakbazzar.app" target="_blank">Pustak Bazzar</a>
+	<a href="https://play.google.com/store/apps/details?id=com.todolist.app" target="_blank">To Do List</a>
+
+    <a href="https://github.com/sumitsah250" target="_blank" rel="noopener noreferrer" style="margin:0 10px;">GitHub</a>
+    <a href="https://linkedin.com/in/sumit-sah-3675b91a9" target="_blank" rel="noopener noreferrer" style="margin:0 10px;">LinkedIn</a>
+    <a href="https://facebook.com/sumitsah250" target="_blank" rel="noopener noreferrer" style="margin:0 10px;">Facebook</a>
+    <a href="https://instagram.com/sumitsah.250" target="_blank" rel="noopener noreferrer" style="margin:0 10px;">Instagram</a>
+  </div>
+</div>
+
+    <div style="display:flex;flex-direction:row;align-items:center">
+        <p style="color:#000;font-family:-apple-system,BlinkMacSystemFont;align-items:center;margin-bottom:0">Made By Sumit</p>
+    </div>
+    <script>
+        !function(e,t){var r,s,o,i;
+        t.__SV||(window.posthog=t,t._i=[],t.init=function(n,a,p){function c(e,t){var r=t.split(".");2==r.length&&(e=e[r[0]],t=r[1]),e[t]=function(){e.push([t].concat(Array.prototype.slice.call(arguments,0)))}}(o=e.createElement("script")).type="text/javascript",o.crossOrigin="anonymous",o.async=!0,o.src=a.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(i=e.getElementsByTagName("script")[0]).parentNode.insertBefore(o,i);var g=t;for(void 0!==p?g=t[p]=[]:p="posthog",g.people=g.people||[],g.toString=function(e){var t="posthog";return"posthog"!==p&&(t+="."+p),e||(t+=" (stub)"),t},g.people.toString=function(){return g.toString(1)+".people (stub)"},r="init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(" "),s=0;s<r.length;s++)c(g,r[s]);t._i.push([n,a,p])},t.__SV=1)}(document,window.posthog||[]),
+        posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE",{api_host:"https://us.i.posthog.com",person_profiles:"identified_only"})
+    </script>
+</body>
 </html>

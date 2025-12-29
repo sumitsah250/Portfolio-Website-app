@@ -25,8 +25,9 @@ const WhatIDo = () => {
       id: 1,
       icon: <Smartphone size={48} />,
       title: 'Android Development',
-      description: 'Creating powerful, user-friendly mobile applications with modern architecture',
-      image: "/images/androidimage.png",
+      description:
+        'Creating powerful, user-friendly mobile applications with modern architecture',
+      image: '/images/androidimage.png',
       points: [
         'Native Android app development with Java',
         'Firebase integration and real-time databases',
@@ -40,7 +41,8 @@ const WhatIDo = () => {
       id: 2,
       icon: <Brain size={48} />,
       title: 'AI & Deep Learning',
-      description: 'Building intelligent systems with machine learning and artificial intelligence',
+      description:
+        'Building intelligent systems with machine learning and artificial intelligence',
       image: '/images/aimlthemeimage.png',
       points: [
         'Machine learning model development with Python',
@@ -50,6 +52,30 @@ const WhatIDo = () => {
         'AI integration in mobile applications'
       ],
       technologies: ['Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'OpenCV']
+    },
+    {
+      id: 3,
+      icon: <Code size={48} />,
+      title: 'Web Development',
+      description:
+        'Designing and developing modern, fast, and scalable web applications with clean UI and optimized performance.',
+      image: '/images/webdev.png',
+      points: [
+        'Modern responsive website development',
+        'Frontend development with React',
+        'REST API integration',
+        'Performance optimization & SEO',
+        'Deployment & hosting management'
+      ],
+      technologies: [
+        'React',
+        'JavaScript',
+        'HTML',
+        'CSS',
+        'Tailwind CSS',
+        'Firebase',
+        'Vercel'
+      ]
     }
   ];
 
@@ -59,16 +85,18 @@ const WhatIDo = () => {
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-grid-small"></div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-8 relative z-10">
-        <div className={`transition-all duration-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          
+        <div
+          className={`transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
           {/* Section Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 font-mono">
-              <span className="text-[#00FFD1]">&lt;</span>WHAT I DO<span className="text-[#00FFD1]">/&gt;</span>
+              <span className="text-[#00FFD1]">&lt;</span>WHAT I DO
+              <span className="text-[#00FFD1]">/&gt;</span>
             </h2>
             <div className="w-24 h-1 bg-[#00FFD1] mx-auto mb-6"></div>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -76,70 +104,65 @@ const WhatIDo = () => {
             </p>
           </div>
 
-          {/* Services Grid */}
+          {/* Services */}
           <div className="space-y-16">
             {services.map((service, index) => (
-              <div 
+              <div
                 key={service.id}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
                   index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
                 }`}
               >
-                
                 {/* Image Side */}
                 <div className={`relative group ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                   <div className="relative overflow-hidden rounded-lg">
-                    <img 
+                    <img
                       src={service.image}
                       alt={service.title}
                       className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    
-                    {/* Overlay with Icon */}
+
                     <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-30 transition-all duration-300"></div>
+
                     <div className="absolute top-6 right-6 text-[#00FFD1] group-hover:scale-110 transition-transform duration-300">
                       {service.icon}
                     </div>
-                    
-                    {/* Animated Border */}
+
                     <div className="absolute -inset-1 bg-gradient-to-r from-[#00FFD1] via-transparent to-[#6FD2C0] rounded-lg opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
                   </div>
                 </div>
 
                 {/* Content Side */}
                 <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                  
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="text-[#00FFD1]">
-                      {service.icon}
-                    </div>
+                    <div className="text-[#00FFD1]">{service.icon}</div>
                     <h3 className="text-3xl md:text-4xl font-bold text-white font-mono">
                       {service.title}
                     </h3>
                   </div>
-                  
-                  <p className="text-gray-300 text-lg leading-relaxed mb-8">
+
+                  <p className="text-gray-300 text-lg leading-relaxed">
                     {service.description}
                   </p>
 
-                  {/* Key Points */}
-                  <div className="space-y-3 mb-8">
+                  <div className="space-y-3">
                     {service.points.map((point, i) => (
                       <div key={i} className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-[#00FFD1] rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#00FFD1] rounded-full mt-2"></div>
                         <span className="text-gray-400">{point}</span>
                       </div>
                     ))}
                   </div>
 
-                  {/* Technologies */}
                   <div>
-                    <h4 className="text-[#00FFD1] font-bold font-mono mb-3">Technologies:</h4>
+                    <h4 className="text-[#00FFD1] font-bold font-mono mb-3">
+                      Technologies:
+                    </h4>
                     <div className="flex flex-wrap gap-2">
                       {service.technologies.map((tech) => (
-                        <span 
+                        <span
                           key={tech}
-                          className="bg-gray-900 bg-opacity-70 px-3 py-2 rounded-lg text-sm text-gray-300 border border-[#00FFD1] border-opacity-30 hover:border-opacity-100 transition-all"
+                          className="bg-gray-900 px-3 py-2 rounded-lg text-sm text-gray-300 border border-[#00FFD1]/30 hover:border-[#00FFD1] transition-all"
                         >
                           {tech}
                         </span>
@@ -147,10 +170,13 @@ const WhatIDo = () => {
                     </div>
                   </div>
 
-                  {/* CTA Button */}
                   <div className="pt-6">
-                    <button 
-                      onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+                    <button
+                      onClick={() =>
+                        document
+                          .getElementById('projects')
+                          .scrollIntoView({ behavior: 'smooth' })
+                      }
                       className="creative-btn-primary group"
                     >
                       <span className="relative z-10">VIEW PROJECTS</span>
@@ -162,24 +188,24 @@ const WhatIDo = () => {
             ))}
           </div>
 
-          {/* Bottom Stats */}
+          {/* Stats */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="bg-gray-900 bg-opacity-30 rounded-lg p-6 border border-[#00FFD1] border-opacity-30">
+            <div className="bg-gray-900/30 rounded-lg p-6 border border-[#00FFD1]/30">
               <Code className="w-8 h-8 text-[#00FFD1] mx-auto mb-2" />
               <div className="text-2xl font-bold text-white font-mono">50+</div>
               <div className="text-gray-400 text-sm">Projects Built</div>
             </div>
-            <div className="bg-gray-900 bg-opacity-30 rounded-lg p-6 border border-[#00FFD1] border-opacity-30">
+            <div className="bg-gray-900/30 rounded-lg p-6 border border-[#00FFD1]/30">
               <Database className="w-8 h-8 text-[#00FFD1] mx-auto mb-2" />
               <div className="text-2xl font-bold text-white font-mono">150K+</div>
               <div className="text-gray-400 text-sm">Lines of Code</div>
             </div>
-            <div className="bg-gray-900 bg-opacity-30 rounded-lg p-6 border border-[#00FFD1] border-opacity-30">
+            <div className="bg-gray-900/30 rounded-lg p-6 border border-[#00FFD1]/30">
               <Cpu className="w-8 h-8 text-[#00FFD1] mx-auto mb-2" />
               <div className="text-2xl font-bold text-white font-mono">30+</div>
               <div className="text-gray-400 text-sm">ML Models</div>
             </div>
-            <div className="bg-gray-900 bg-opacity-30 rounded-lg p-6 border border-[#00FFD1] border-opacity-30">
+            <div className="bg-gray-900/30 rounded-lg p-6 border border-[#00FFD1]/30">
               <Zap className="w-8 h-8 text-[#00FFD1] mx-auto mb-2" />
               <div className="text-2xl font-bold text-white font-mono">2.5+</div>
               <div className="text-gray-400 text-sm">Years Experience</div>

@@ -87,11 +87,11 @@ const About = () => {
               {/* Updated Quick Stats */}
               <div className="grid grid-cols-2 gap-6 py-8 border-y border-gray-800">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#00FFD1] font-mono">15K+</div>
+                  <div className="text-2xl font-bold text-[#00FFD1] font-mono">20K+</div>
                   <div className="text-sm text-gray-400">App Downloads</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-[#00FFD1] font-mono">5K+</div>
+                  <div className="text-2xl font-bold text-[#00FFD1] font-mono">6K+</div>
                   <div className="text-sm text-gray-400">Active Users</div>
                 </div>
               </div>

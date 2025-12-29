@@ -64,7 +64,17 @@ const Achievements = () => {
       date: '2022-2023',
       details: 'Led workshops on modern development practices and emerging technologies',
       color: 'from-purple-400 to-pink-500'
-    }
+    },
+    {
+    id: 7,
+    icon: <Medal size={32} />,
+    title: 'CoDecode Event Winner',
+    description: 'First place at Technorion 5.0, IIT Zonal Round 🇳🇵',
+    category: 'Competition',
+    date: '2025',
+    details: 'Grateful to win the CoDecode event at Technorion 5.0 and honored to represent Nepal at IIT Techfest',
+    color: 'from-red-400 to-yellow-500'
+  }
   ];
 
   useEffect(() => {

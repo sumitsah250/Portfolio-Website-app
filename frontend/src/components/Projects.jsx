@@ -143,15 +143,7 @@ const Projects = () => {
     },
 
     // Real-World Projects
-    {
-      id: 101,
-      title: 'MeaningBy.com',
-      category: 'Real-World',
-      description: 'Live educational platform focused on dictionary, translations, and writing resources. Fully designed, developed, deployed, and maintained by me.',
-      image: '/images/meaningby.png',
-      links: { demo: 'https://meaningby.com' },
-      featured: true
-    },
+   
     {
       id: 102,
       title: 'IOE GESAN – Community Website',

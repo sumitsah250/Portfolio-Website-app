@@ -73,7 +73,7 @@ const About = () => {
                   
                   <p>
                     Currently pursuing Bachelor of Computer Engineering at Institute of Engineering, WRC. 
-                    I've successfully built and published apps with 5K+ active users and 15K+ downloads, 
+                    I've successfully built and published apps with 6K+ active users and 25K+ downloads, 
                     demonstrating my ability to create impactful mobile solutions.
                   </p>
                   

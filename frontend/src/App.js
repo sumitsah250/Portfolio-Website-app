@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import GitHub from './components/GitHub';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
+import Experience from "./components/Experience";
 import Footer from './components/Footer';
 import { Toaster } from './components/ui/toaster';
 
@@ -24,6 +25,7 @@ function App() {
           <WhatIDo />
           <Skills />
           <Projects />
+          <Experience /> 
           <GitHub />
           <Achievements />
           <Contact />

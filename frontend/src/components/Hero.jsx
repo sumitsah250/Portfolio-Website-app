@@ -59,7 +59,7 @@ const Hero = () => {
         {/* Enhanced Stats */}
         <div className="flex flex-wrap justify-center gap-8 mb-12">
           <div className="text-center bg-gray-900 bg-opacity-30 rounded-lg p-4 border border-[#00FFD1] border-opacity-30">
-            <div className="text-3xl font-bold text-[#00FFD1] font-mono">20K+</div>
+            <div className="text-3xl font-bold text-[#00FFD1] font-mono">25K+</div>
             <div className="text-sm text-gray-400">Downloads</div>
           </div>
           <div className="text-center bg-gray-900 bg-opacity-30 rounded-lg p-4 border border-[#00FFD1] border-opacity-30">

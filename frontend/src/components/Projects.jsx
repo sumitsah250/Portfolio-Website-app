@@ -107,6 +107,32 @@ const Projects = () => {
         github: 'https://github.com/sumitsah250/OSMHackFest2024'
       }
     },
+    {
+  id: 7,
+  title: 'Dishcovery - AI Recipe Recommendation System',
+  description: 'An intelligent recipe recommendation platform that uses YOLOv8 object detection and speech recognition to identify available ingredients and suggest personalized recipes. Users can upload ingredient images, use voice commands, or manually enter ingredients to receive real-time cooking recommendations.',
+  image: '/images/Dishcovery.png',
+  category: 'ML/AI',
+  tech: [
+    'Python',
+    'YOLOv8',
+    'FastAPI',
+    'Whisper',
+    'PyTorch',
+    'OpenCV',
+    'HTML',
+    'CSS',
+    'JavaScript'
+  ],
+  highlights: [
+    'YOLOv8 Ingredient Detection',
+    'Voice-to-Recipe Recommendation',
+    'Real-time AI-Powered Suggestions'
+  ],
+  links: {
+    github: 'https://github.com/sumitsah250/Dishcovery'
+  }
+},
 
     // Robotics Projects
     {
